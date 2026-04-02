@@ -1,4 +1,4 @@
-config = { max_map_keys = 262144 }
+config = { max_map_keys = 1262144 }
 
 BEGIN {
     printf("%-10s\t%-16s\t%-6s\t%-32s\t%-6s\t%-6s\t%-8s\t%s\n",
