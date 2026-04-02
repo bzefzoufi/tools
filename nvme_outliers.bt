@@ -6,14 +6,21 @@ BEGIN {
 }
 
 tracepoint:nvme:nvme_setup_cmd {
-    @start[args->cid, args->qid] = nsecs;
+    /* key includes ctrl_id to avoid cross-controller cid collision */
+    @start[args->ctrl_id, args->cid, args->qid] = nsecs;
 }
 
 tracepoint:nvme:nvme_complete_rq {
-    $key_ns = @start[args->cid, args->qid];
+    $key_ns = @start[args->ctrl_id, args->cid, args->qid];
     if ($key_ns == 0) { return; }
 
     $lat = (nsecs - $key_ns) / 1000000;
+
+    /* guard against stale key giving impossible latency */
+    if ($lat > 500) {
+        delete(@start[args->ctrl_id, args->cid, args->qid]);
+        return;
+    }
 
     if ($lat > 20) {
         time("%H:%M:%S\t");
@@ -27,7 +34,7 @@ tracepoint:nvme:nvme_complete_rq {
                $lat);
     }
 
-    delete(@start[args->cid, args->qid]);
+    delete(@start[args->ctrl_id, args->cid, args->qid]);
 }
 
 END {
