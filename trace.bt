@@ -1,0 +1,39 @@
+BEGIN {
+    printf("%-10s\t%-16s\t%-6s\t%-32s\t%-2s\t%-6s\t%-6s\t%-8s\t%s\n",
+           "TIME", "COMM", "PID", "DISK", "T", "CID", "QID", "STATUS", "LAT(ms)");
+}
+
+tracepoint:nvme:nvme_setup_cmd {
+    @start[args->cid, args->qid]  = nsecs;
+    @comm_m[args->cid, args->qid] = comm;
+    @pid_m[args->cid, args->qid]  = (uint64)pid;
+    @op_m[args->cid, args->qid]   = (uint64)args->opcode;
+    @disk_m[args->cid, args->qid] = args->disk;
+}
+
+tracepoint:nvme:nvme_complete_rq {
+    $key_ns = @start[args->cid, args->qid];
+    if ($key_ns == 0) { return; }
+
+    $lat = (nsecs - $key_ns) / 1000000;
+    $op  = @op_m[args->cid, args->qid];
+
+    if ($lat > 20) {
+        time("%H:%M:%S\t");
+        printf("%-16s\t%-6d\t%-32s\t%-2s\t%-6d\t%-6d\t%-8d\t%d\n",
+               @comm_m[args->cid, args->qid],
+               @pid_m[args->cid, args->qid],
+               @disk_m[args->cid, args->qid],
+               $op == 1 ? "W" : "R",
+               args->cid,
+               args->qid,
+               args->status,
+               $lat);
+    }
+
+    delete(@start[args->cid, args->qid]);
+    delete(@comm_m[args->cid, args->qid]);
+    delete(@pid_m[args->cid, args->qid]);
+    delete(@op_m[args->cid, args->qid]);
+    delete(@disk_m[args->cid, args->qid]);
+}
