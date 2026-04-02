@@ -1,0 +1,79 @@
+config = { max_map_keys = 65535 }
+
+BEGIN {
+    printf("%-10s\t%-16s\t%-6s\t%-32s\t%-6s\t%-6s\t%-8s\t%s\n",
+           "TIME", "COMM", "PID", "DISK", "CID", "QID", "STATUS", "LAT(ms)");
+}
+
+tracepoint:nvme:nvme_setup_cmd {
+    if (comm == "fio") {
+
+        $k = (args->ctrl_id, args->cid, args->qid, tid);
+
+        // increment sequence per key
+        @seq[$k] = @seq[$k] + 1;
+        $idx = @seq[$k];
+
+        @start[$k, $idx]  = nsecs;
+        @comm_m[$k, $idx] = comm;
+        @pid_m[$k, $idx]  = (uint64)pid;
+    }
+}
+
+tracepoint:nvme:nvme_complete_rq {
+
+    $k = (args->ctrl_id, args->cid, args->qid, tid);
+    $idx = @seq[$k];
+
+    if ($idx == 0) {
+        return;
+    }
+
+    $key_ns = @start[$k, $idx];
+    if ($key_ns == 0) {
+        return;
+    }
+
+    $lat = (nsecs - $key_ns) / 1000000;
+
+    if ($lat > 2) {
+        $now = nsecs / 1000000000;
+        $hh  = ($now % 86400) / 3600;
+        $mm  = ($now % 3600) / 60;
+        $ss  = $now % 60;
+
+        printf("%02d:%02d:%02d\t%-16s\t%-6d\t%-32s\t%-6d\t%-6d\t%-8d\t%d\n",
+               $hh, $mm, $ss,
+               @comm_m[$k, $idx],
+               @pid_m[$k, $idx],
+               args->disk,
+               args->cid,
+               args->qid,
+               args->status,
+               $lat);
+
+        @outliers_per_disk[args->disk] = count();
+    }
+
+    // cleanup this specific entry
+    delete(@start[$k, $idx]);
+    delete(@comm_m[$k, $idx]);
+    delete(@pid_m[$k, $idx]);
+
+    // decrement sequence
+    @seq[$k] = $idx - 1;
+}
+
+interval:s:10 {
+    printf("\n--- outliers per disk (last 10s) ---\n");
+    print(@outliers_per_disk);
+    clear(@outliers_per_disk);
+}
+
+END {
+    clear(@start);
+    clear(@comm_m);
+    clear(@pid_m);
+    clear(@seq);
+    clear(@outliers_per_disk);
+}
