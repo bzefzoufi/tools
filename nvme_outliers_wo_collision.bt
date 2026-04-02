@@ -1,4 +1,4 @@
-config = { max_map_keys = 65535 }
+config = { max_map_keys = 262144 }
 
 BEGIN {
     printf("%-10s\t%-16s\t%-6s\t%-32s\t%-6s\t%-6s\t%-8s\t%s\n",
@@ -10,33 +10,27 @@ tracepoint:nvme:nvme_setup_cmd {
 
         $k = (args->ctrl_id, args->cid, args->qid, tid);
 
-        // increment sequence per key
-        @seq[$k] = @seq[$k] + 1;
-        $idx = @seq[$k];
-
-        @start[$k, $idx]  = nsecs;
-        @comm_m[$k, $idx] = comm;
-        @pid_m[$k, $idx]  = (uint64)pid;
+        // overwrite safely (bounded memory)
+        @start[$k]  = nsecs;
+        @comm_m[$k] = comm;
+        @pid_m[$k]  = (uint64)pid;
     }
 }
 
 tracepoint:nvme:nvme_complete_rq {
 
     $k = (args->ctrl_id, args->cid, args->qid, tid);
-    $idx = @seq[$k];
 
-    if ($idx == 0) {
-        return;
-    }
-
-    $key_ns = @start[$k, $idx];
+    $key_ns = @start[$k];
     if ($key_ns == 0) {
         return;
     }
 
     $lat = (nsecs - $key_ns) / 1000000;
 
-    if ($lat > 2) {
+    // keep only realistic latencies
+    if ($lat > 2 && $lat < 1000) {
+
         $now = nsecs / 1000000000;
         $hh  = ($now % 86400) / 3600;
         $mm  = ($now % 3600) / 60;
@@ -44,8 +38,8 @@ tracepoint:nvme:nvme_complete_rq {
 
         printf("%02d:%02d:%02d\t%-16s\t%-6d\t%-32s\t%-6d\t%-6d\t%-8d\t%d\n",
                $hh, $mm, $ss,
-               @comm_m[$k, $idx],
-               @pid_m[$k, $idx],
+               @comm_m[$k],
+               @pid_m[$k],
                args->disk,
                args->cid,
                args->qid,
@@ -55,13 +49,9 @@ tracepoint:nvme:nvme_complete_rq {
         @outliers_per_disk[args->disk] = count();
     }
 
-    // cleanup this specific entry
-    delete(@start[$k, $idx]);
-    delete(@comm_m[$k, $idx]);
-    delete(@pid_m[$k, $idx]);
-
-    // decrement sequence
-    @seq[$k] = $idx - 1;
+    delete(@start[$k]);
+    delete(@comm_m[$k]);
+    delete(@pid_m[$k]);
 }
 
 interval:s:10 {
@@ -74,6 +64,5 @@ END {
     clear(@start);
     clear(@comm_m);
     clear(@pid_m);
-    clear(@seq);
     clear(@outliers_per_disk);
 }
