@@ -20,8 +20,13 @@ tracepoint:nvme:nvme_complete_rq {
     $lat = (nsecs - $key_ns) / 1000000;
 
     if ($lat > 2) {
-        time("%H:%M:%S\t");
-        printf("%-16s\t%-6d\t%-32s\t%-6d\t%-6d\t%-8d\t%d\n",
+        $now = nsecs / 1000000000;
+        $hh  = ($now % 86400) / 3600;
+        $mm  = ($now % 3600) / 60;
+        $ss  = $now % 60;
+
+        printf("%02d:%02d:%02d\t%-16s\t%-6d\t%-32s\t%-6d\t%-6d\t%-8d\t%d\n",
+               $hh, $mm, $ss,
                @comm_m[args->ctrl_id, args->cid, args->qid],
                @pid_m[args->ctrl_id, args->cid, args->qid],
                args->disk,
