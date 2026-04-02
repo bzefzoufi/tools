@@ -1,0 +1,55 @@
+config = { max_map_keys = 16384 }
+
+BEGIN {
+    printf("%-10s\t%-16s\t%-6s\t%-32s\t%-6s\t%-6s\t%-8s\t%s\n",
+           "TIME", "COMM", "PID", "DISK", "CID", "QID", "STATUS", "LAT(ms)");
+}
+
+kprobe:nvme_rdma_queue_rq {
+    /* arg0 = struct blk_mq_queue_data*, arg1 = bool
+       request pointer is arg0->rq — use arg0 as key directly */
+    @start[arg0]  = nsecs;
+    @comm_m[arg0] = comm;
+    @pid_m[arg0]  = (uint64)pid;
+}
+
+kprobe:nvme_rdma_complete_rq {
+    /* arg0 = struct request * */
+    $key_ns = @start[arg0];
+    if ($key_ns == 0) { return; }
+
+    $lat = (nsecs - $key_ns) / 1000000;
+    $now = nsecs / 1000000000;
+    $hh  = ($now % 86400) / 3600;
+    $mm  = ($now % 3600)  / 60;
+    $ss  = $now % 60;
+
+    if ($lat > 2) {
+        printf("%02d:%02d:%02d\t%-16s\t%-6d\t%-32s\t%-6d\t%-6d\t%-8d\t%d\n",
+               $hh, $mm, $ss,
+               @comm_m[arg0],
+               @pid_m[arg0],
+               "nvme-rdma",
+               0, 0, 0,
+               $lat);
+
+        @outliers_per_disk["nvme-rdma"] = count();
+    }
+
+    delete(@start[arg0]);
+    delete(@comm_m[arg0]);
+    delete(@pid_m[arg0]);
+}
+
+interval:s:10 {
+    printf("\n--- outliers per transport (last 10s) ---\n");
+    print(@outliers_per_disk);
+    clear(@outliers_per_disk);
+}
+
+END {
+    clear(@start);
+    clear(@comm_m);
+    clear(@pid_m);
+    clear(@outliers_per_disk);
+}
