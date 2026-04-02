@@ -6,11 +6,12 @@ BEGIN {
 }
 
 tracepoint:nvme:nvme_setup_cmd {
-    @start[args->cid, args->qid] = nsecs;
-    @comm_m[args->cid, args->qid] = comm;
-    @pid_m[args->cid, args->qid]  = (uint64)pid;
-    @op_m[args->cid, args->qid]   = (uint64)args->opcode;
-    @disk_m[args->cid, args->qid] = args->disk;
+    @start[args->cid, args->qid]   = nsecs;
+    @comm_m[args->cid, args->qid]  = comm;
+    @pid_m[args->cid, args->qid]   = (uint64)pid;
+    @op_m[args->cid, args->qid]    = (uint64)args->opcode;
+    @disk_m[args->cid, args->qid]  = args->disk;
+    @tracked[args->cid, args->qid] = 1;
 }
 
 tracepoint:nvme:nvme_complete_rq {
@@ -33,12 +34,16 @@ tracepoint:nvme:nvme_complete_rq {
                $lat);
     }
 
-    /* delete only if key exists in each map */
     delete(@start[args->cid, args->qid]);
-    if (@comm_m[args->cid, args->qid]) { delete(@comm_m[args->cid, args->qid]); }
-    if (@pid_m[args->cid, args->qid])  { delete(@pid_m[args->cid, args->qid]);  }
-    if (@op_m[args->cid, args->qid])   { delete(@op_m[args->cid, args->qid]);   }
-    if (@disk_m[args->cid, args->qid]) { delete(@disk_m[args->cid, args->qid]); }
+    delete(@op_m[args->cid, args->qid]);
+    delete(@pid_m[args->cid, args->qid]);
+
+    /* only delete string maps if they were actually inserted */
+    if (@tracked[args->cid, args->qid]) {
+        delete(@comm_m[args->cid, args->qid]);
+        delete(@disk_m[args->cid, args->qid]);
+        delete(@tracked[args->cid, args->qid]);
+    }
 }
 
 END {
@@ -47,4 +52,5 @@ END {
     clear(@pid_m);
     clear(@op_m);
     clear(@disk_m);
+    clear(@tracked);
 }
