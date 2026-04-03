@@ -1,0 +1,5 @@
+# confirm both kprobes are actually triggering at all
+sudo bpftrace -e '
+kprobe:nvme_rdma_queue_rq    { @submit = count(); }
+kprobe:nvme_rdma_complete_rq { @complete = count(); }
+interval:s:2 { print(@submit); print(@complete); }'
