@@ -1,0 +1,7 @@
+sudo bpftrace -e '
+kprobe:nvme_rdma_queue_rq {
+    printf("queue_rq:    arg0=%lx arg1=%lx arg2=%lx\n", arg0, arg1, arg2);
+}
+kprobe:nvme_rdma_complete_rq {
+    printf("complete_rq: arg0=%lx\n", arg0);
+}' 2>/dev/null | head -20
