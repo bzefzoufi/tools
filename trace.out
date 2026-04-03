@@ -1,0 +1,3380 @@
+Attaching 5 probes...
+TIME      	COMM            	PID   	DISK            	LAT(ms)
+
+--- outliers last 10s ---
+
+19:46:46	fio             	116210	nvme-rdma       	2
+19:46:46	fio             	116216	nvme-rdma       	2
+19:46:46	fio             	116203	nvme-rdma       	2
+19:46:46	fio             	116210	nvme-rdma       	2
+19:46:46	fio             	116204	nvme-rdma       	2
+19:46:46	fio             	116210	nvme-rdma       	2
+19:46:46	fio             	116214	nvme-rdma       	2
+19:46:46	fio             	116216	nvme-rdma       	2
+19:46:46	fio             	116207	nvme-rdma       	2
+19:46:46	fio             	116208	nvme-rdma       	2
+19:46:46	fio             	116216	nvme-rdma       	2
+19:46:46	fio             	116214	nvme-rdma       	2
+19:46:46	fio             	116204	nvme-rdma       	2
+19:46:46	fio             	116208	nvme-rdma       	2
+19:46:46	fio             	116215	nvme-rdma       	2
+19:46:46	fio             	116216	nvme-rdma       	2
+19:46:46	fio             	116212	nvme-rdma       	2
+19:46:46	fio             	116211	nvme-rdma       	2
+19:46:49	fio             	116204	nvme-rdma       	2
+19:46:49	fio             	116206	nvme-rdma       	2
+19:46:49	fio             	116216	nvme-rdma       	2
+19:46:49	fio             	116215	nvme-rdma       	2
+19:46:49	fio             	116213	nvme-rdma       	2
+19:46:49	fio             	116217	nvme-rdma       	2
+19:46:49	fio             	116207	nvme-rdma       	2
+19:46:49	fio             	116208	nvme-rdma       	2
+19:46:49	fio             	116213	nvme-rdma       	2
+19:46:49	fio             	116217	nvme-rdma       	2
+19:46:49	fio             	116204	nvme-rdma       	2
+19:46:49	fio             	116211	nvme-rdma       	2
+19:46:49	fio             	116210	nvme-rdma       	2
+19:46:49	fio             	116209	nvme-rdma       	2
+19:46:49	fio             	116216	nvme-rdma       	2
+19:46:49	fio             	116202	nvme-rdma       	3
+19:46:49	fio             	116207	nvme-rdma       	2
+19:46:49	fio             	116214	nvme-rdma       	3
+19:46:49	fio             	116210	nvme-rdma       	2
+19:46:49	fio             	116211	nvme-rdma       	2
+19:46:49	fio             	116209	nvme-rdma       	2
+19:46:49	fio             	116216	nvme-rdma       	2
+19:46:49	fio             	116211	nvme-rdma       	2
+19:46:49	fio             	116209	nvme-rdma       	2
+19:46:49	fio             	116202	nvme-rdma       	3
+19:46:49	fio             	116205	nvme-rdma       	2
+19:46:49	fio             	116207	nvme-rdma       	2
+19:46:49	fio             	116217	nvme-rdma       	5
+19:46:49	fio             	116218	nvme-rdma       	3
+19:46:49	fio             	116214	nvme-rdma       	2
+19:46:49	fio             	116203	nvme-rdma       	2
+19:46:49	fio             	116217	nvme-rdma       	2
+19:46:49	fio             	116215	nvme-rdma       	2
+19:46:49	fio             	116217	nvme-rdma       	2
+19:46:49	fio             	116207	nvme-rdma       	2
+19:46:49	fio             	116203	nvme-rdma       	2
+19:46:49	fio             	116203	nvme-rdma       	2
+19:46:49	fio             	116206	nvme-rdma       	2
+19:46:49	fio             	116217	nvme-rdma       	2
+19:46:49	fio             	116207	nvme-rdma       	2
+19:46:49	fio             	116215	nvme-rdma       	3
+19:46:49	fio             	116217	nvme-rdma       	2
+19:46:49	fio             	116212	nvme-rdma       	2
+19:46:49	fio             	116214	nvme-rdma       	3
+19:46:49	fio             	116212	nvme-rdma       	3
+19:46:49	fio             	116210	nvme-rdma       	3
+19:46:49	fio             	116213	nvme-rdma       	3
+19:46:49	fio             	116208	nvme-rdma       	2
+19:46:49	fio             	116214	nvme-rdma       	3
+19:46:49	fio             	116211	nvme-rdma       	2
+19:46:49	fio             	116207	nvme-rdma       	2
+19:46:49	fio             	116212	nvme-rdma       	2
+19:46:49	fio             	116214	nvme-rdma       	3
+19:46:49	fio             	116216	nvme-rdma       	2
+19:46:49	fio             	116210	nvme-rdma       	3
+19:46:49	fio             	116205	nvme-rdma       	2
+19:46:49	fio             	116216	nvme-rdma       	3
+19:46:49	fio             	116217	nvme-rdma       	2
+19:46:49	fio             	116210	nvme-rdma       	2
+19:46:49	fio             	116209	nvme-rdma       	3
+19:46:49	fio             	116203	nvme-rdma       	2
+19:46:49	fio             	116209	nvme-rdma       	2
+19:46:49	fio             	116206	nvme-rdma       	2
+19:46:49	fio             	116202	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	2
+19:46:50	fio             	116207	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116204	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116217	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116207	nvme-rdma       	2
+19:46:50	fio             	116207	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116217	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	3
+19:46:50	fio             	116210	nvme-rdma       	3
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116211	nvme-rdma       	3
+19:46:50	fio             	116204	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	3
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116217	nvme-rdma       	2
+19:46:50	fio             	116217	nvme-rdma       	2
+19:46:50	fio             	116204	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	3
+19:46:50	fio             	116215	nvme-rdma       	3
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	3
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	3
+19:46:50	fio             	116218	nvme-rdma       	3
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116211	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116207	nvme-rdma       	2
+19:46:50	fio             	116204	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116214	nvme-rdma       	2
+19:46:50	fio             	116218	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116207	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	2
+19:46:50	fio             	116207	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116204	nvme-rdma       	3
+19:46:50	fio             	116215	nvme-rdma       	2
+19:46:50	fio             	116214	nvme-rdma       	3
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116214	nvme-rdma       	3
+19:46:50	fio             	116211	nvme-rdma       	2
+19:46:50	fio             	116214	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	2
+19:46:50	fio             	116217	nvme-rdma       	2
+19:46:50	fio             	116218	nvme-rdma       	3
+19:46:50	fio             	116217	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	3
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	3
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	3
+19:46:50	fio             	116204	nvme-rdma       	2
+19:46:50	fio             	116204	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	3
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	3
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	3
+19:46:50	fio             	116214	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	2
+19:46:50	fio             	116214	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116211	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116214	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	2
+19:46:50	fio             	116207	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116211	nvme-rdma       	2
+19:46:50	fio             	116217	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116217	nvme-rdma       	3
+19:46:50	fio             	116215	nvme-rdma       	3
+19:46:50	fio             	116202	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	3
+19:46:50	fio             	116217	nvme-rdma       	3
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116217	nvme-rdma       	3
+19:46:50	fio             	116205	nvme-rdma       	3
+19:46:50	fio             	116207	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116207	nvme-rdma       	3
+19:46:50	fio             	116211	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116214	nvme-rdma       	2
+19:46:50	fio             	116211	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	3
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	3
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116214	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116204	nvme-rdma       	2
+19:46:50	fio             	116218	nvme-rdma       	3
+19:46:50	fio             	116208	nvme-rdma       	3
+19:46:50	fio             	116204	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	3
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116218	nvme-rdma       	2
+19:46:50	fio             	116204	nvme-rdma       	2
+19:46:50	fio             	116204	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116207	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116214	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116211	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	3
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116214	nvme-rdma       	3
+19:46:50	fio             	116213	nvme-rdma       	3
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116217	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116214	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116204	nvme-rdma       	2
+19:46:50	fio             	116217	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116207	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	3
+19:46:50	fio             	116213	nvme-rdma       	3
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116207	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	2
+19:46:50	fio             	116217	nvme-rdma       	3
+19:46:50	fio             	116207	nvme-rdma       	3
+19:46:50	fio             	116211	nvme-rdma       	3
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	3
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	3
+19:46:50	fio             	116214	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	3
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116217	nvme-rdma       	2
+19:46:50	fio             	116207	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	3
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	3
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	3
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116207	nvme-rdma       	2
+19:46:50	fio             	116204	nvme-rdma       	2
+19:46:50	fio             	116218	nvme-rdma       	2
+19:46:50	fio             	116211	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116211	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116217	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116216	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	3
+19:46:50	fio             	116215	nvme-rdma       	4
+19:46:50	fio             	116211	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116209	nvme-rdma       	3
+19:46:50	fio             	116214	nvme-rdma       	3
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	3
+19:46:50	fio             	116204	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	2
+19:46:50	fio             	116207	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	2
+19:46:50	fio             	116204	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116211	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116204	nvme-rdma       	3
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116207	nvme-rdma       	2
+19:46:50	fio             	116211	nvme-rdma       	3
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	3
+19:46:50	fio             	116209	nvme-rdma       	2
+19:46:50	fio             	116218	nvme-rdma       	3
+19:46:50	fio             	116210	nvme-rdma       	2
+19:46:50	fio             	116212	nvme-rdma       	2
+19:46:50	fio             	116218	nvme-rdma       	2
+19:46:50	fio             	116205	nvme-rdma       	2
+19:46:50	fio             	116202	nvme-rdma       	2
+19:46:50	fio             	116208	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116213	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116206	nvme-rdma       	2
+19:46:50	fio             	116203	nvme-rdma       	2
+19:46:50	fio             	116215	nvme-rdma       	2
+19:46:50	fio             	116214	nvme-rdma       	2
+19:46:53	fio             	116204	nvme-rdma       	2
+19:46:53	fio             	116210	nvme-rdma       	2
+19:46:53	fio             	116217	nvme-rdma       	2
+19:46:53	fio             	116208	nvme-rdma       	2
+19:46:53	fio             	116206	nvme-rdma       	2
+19:46:53	fio             	116216	nvme-rdma       	2
+19:46:53	fio             	116209	nvme-rdma       	2
+19:46:53	fio             	116213	nvme-rdma       	2
+19:46:53	fio             	116207	nvme-rdma       	2
+19:46:53	fio             	116212	nvme-rdma       	2
+19:46:53	fio             	116203	nvme-rdma       	2
+19:46:53	fio             	116212	nvme-rdma       	2
+19:46:53	fio             	116217	nvme-rdma       	2
+19:46:53	fio             	116205	nvme-rdma       	2
+
+--- outliers last 10s ---
+@outliers[nvme-rdma]: 428
+19:46:56	fio             	116212	nvme-rdma       	2
+19:46:56	fio             	116205	nvme-rdma       	2
+19:46:56	fio             	116202	nvme-rdma       	2
+19:46:56	fio             	116214	nvme-rdma       	2
+19:46:56	fio             	116203	nvme-rdma       	2
+19:46:56	fio             	116211	nvme-rdma       	2
+19:46:56	fio             	116209	nvme-rdma       	2
+19:46:56	fio             	116210	nvme-rdma       	2
+19:46:56	fio             	116207	nvme-rdma       	2
+19:46:56	fio             	116210	nvme-rdma       	2
+19:46:56	fio             	116214	nvme-rdma       	2
+19:46:56	fio             	116210	nvme-rdma       	2
+19:46:56	fio             	116215	nvme-rdma       	2
+19:46:56	fio             	116204	nvme-rdma       	2
+19:46:56	fio             	116202	nvme-rdma       	2
+19:46:56	fio             	116205	nvme-rdma       	2
+19:46:56	fio             	116213	nvme-rdma       	2
+19:46:56	fio             	116217	nvme-rdma       	2
+19:46:56	fio             	116211	nvme-rdma       	2
+19:46:56	fio             	116202	nvme-rdma       	2
+19:46:56	fio             	116203	nvme-rdma       	2
+19:46:56	fio             	116211	nvme-rdma       	2
+19:46:56	fio             	116213	nvme-rdma       	2
+19:46:56	fio             	116216	nvme-rdma       	2
+19:46:56	fio             	116211	nvme-rdma       	2
+19:46:56	fio             	116204	nvme-rdma       	2
+19:46:56	fio             	116218	nvme-rdma       	2
+19:46:56	fio             	116205	nvme-rdma       	2
+19:46:56	fio             	116205	nvme-rdma       	2
+19:46:56	fio             	116208	nvme-rdma       	2
+19:46:56	fio             	116203	nvme-rdma       	2
+19:46:56	fio             	116213	nvme-rdma       	2
+19:46:56	fio             	116211	nvme-rdma       	2
+19:46:56	fio             	116207	nvme-rdma       	2
+19:46:56	fio             	116203	nvme-rdma       	2
+19:46:56	fio             	116210	nvme-rdma       	2
+19:46:56	fio             	116213	nvme-rdma       	2
+19:46:56	fio             	116215	nvme-rdma       	2
+19:46:56	fio             	116207	nvme-rdma       	2
+19:46:56	fio             	116207	nvme-rdma       	2
+19:46:56	fio             	116210	nvme-rdma       	2
+19:46:56	fio             	116211	nvme-rdma       	2
+19:46:56	fio             	116215	nvme-rdma       	2
+19:46:56	fio             	116217	nvme-rdma       	2
+19:46:56	fio             	116212	nvme-rdma       	2
+19:46:56	fio             	116213	nvme-rdma       	2
+19:46:56	fio             	116206	nvme-rdma       	2
+19:46:56	fio             	116202	nvme-rdma       	2
+19:46:56	fio             	116217	nvme-rdma       	2
+19:46:56	fio             	116209	nvme-rdma       	2
+19:46:56	fio             	116216	nvme-rdma       	2
+19:46:56	fio             	116215	nvme-rdma       	2
+19:46:56	fio             	116210	nvme-rdma       	2
+19:46:56	fio             	116213	nvme-rdma       	2
+19:46:56	fio             	116217	nvme-rdma       	2
+19:46:56	fio             	116212	nvme-rdma       	2
+19:46:56	fio             	116207	nvme-rdma       	2
+19:46:56	fio             	116202	nvme-rdma       	2
+19:46:56	fio             	116212	nvme-rdma       	2
+19:46:56	fio             	116202	nvme-rdma       	2
+19:46:56	fio             	116207	nvme-rdma       	2
+19:46:56	fio             	116202	nvme-rdma       	2
+19:46:56	fio             	116216	nvme-rdma       	2
+19:46:56	fio             	116216	nvme-rdma       	2
+19:46:56	fio             	116214	nvme-rdma       	2
+19:46:56	fio             	116203	nvme-rdma       	2
+19:46:56	fio             	116212	nvme-rdma       	2
+19:46:56	fio             	116209	nvme-rdma       	2
+19:46:56	fio             	116216	nvme-rdma       	2
+19:46:56	fio             	116208	nvme-rdma       	2
+19:46:56	fio             	116208	nvme-rdma       	2
+19:46:56	fio             	116202	nvme-rdma       	2
+19:46:56	fio             	116207	nvme-rdma       	2
+19:46:56	fio             	116216	nvme-rdma       	2
+19:46:56	fio             	116214	nvme-rdma       	2
+19:46:56	fio             	116216	nvme-rdma       	2
+19:46:56	fio             	116209	nvme-rdma       	2
+19:46:56	fio             	116208	nvme-rdma       	2
+19:46:56	fio             	116210	nvme-rdma       	2
+19:46:56	fio             	116207	nvme-rdma       	2
+19:46:56	fio             	116214	nvme-rdma       	2
+19:46:56	fio             	116210	nvme-rdma       	2
+19:46:56	fio             	116210	nvme-rdma       	2
+19:46:56	fio             	116209	nvme-rdma       	2
+19:46:56	fio             	116218	nvme-rdma       	2
+19:46:59	fio             	116212	nvme-rdma       	2
+19:46:59	fio             	116214	nvme-rdma       	2
+19:46:59	fio             	116205	nvme-rdma       	2
+19:46:59	fio             	116205	nvme-rdma       	2
+19:46:59	fio             	116216	nvme-rdma       	2
+19:46:59	fio             	116213	nvme-rdma       	2
+19:46:59	fio             	116207	nvme-rdma       	2
+19:46:59	fio             	116216	nvme-rdma       	2
+19:46:59	fio             	116208	nvme-rdma       	2
+19:46:59	fio             	116210	nvme-rdma       	2
+19:46:59	fio             	116206	nvme-rdma       	2
+19:46:59	fio             	116202	nvme-rdma       	2
+19:46:59	fio             	116203	nvme-rdma       	2
+19:46:59	fio             	116202	nvme-rdma       	2
+19:46:59	fio             	116202	nvme-rdma       	2
+19:46:59	fio             	116214	nvme-rdma       	2
+19:46:59	fio             	116217	nvme-rdma       	2
+19:46:59	fio             	116202	nvme-rdma       	2
+19:46:59	fio             	116215	nvme-rdma       	2
+19:46:59	fio             	116215	nvme-rdma       	2
+19:46:59	fio             	116216	nvme-rdma       	2
+19:46:59	fio             	116207	nvme-rdma       	2
+19:46:59	fio             	116210	nvme-rdma       	2
+19:46:59	fio             	116218	nvme-rdma       	2
+19:46:59	fio             	116213	nvme-rdma       	2
+19:46:59	fio             	116205	nvme-rdma       	2
+19:46:59	fio             	116216	nvme-rdma       	2
+19:46:59	fio             	116217	nvme-rdma       	2
+19:46:59	fio             	116205	nvme-rdma       	2
+19:46:59	fio             	116215	nvme-rdma       	2
+19:46:59	fio             	116218	nvme-rdma       	2
+19:46:59	fio             	116217	nvme-rdma       	2
+19:46:59	fio             	116204	nvme-rdma       	2
+19:46:59	fio             	116209	nvme-rdma       	2
+19:46:59	fio             	116212	nvme-rdma       	2
+19:46:59	fio             	116210	nvme-rdma       	2
+19:46:59	fio             	116204	nvme-rdma       	2
+19:46:59	fio             	116217	nvme-rdma       	2
+19:46:59	fio             	116209	nvme-rdma       	2
+19:46:59	fio             	116213	nvme-rdma       	2
+19:46:59	fio             	116214	nvme-rdma       	2
+19:46:59	fio             	116217	nvme-rdma       	2
+19:46:59	fio             	116205	nvme-rdma       	2
+19:46:59	fio             	116210	nvme-rdma       	2
+19:46:59	fio             	116217	nvme-rdma       	2
+19:46:59	fio             	116217	nvme-rdma       	2
+19:46:59	fio             	116203	nvme-rdma       	2
+19:46:59	fio             	116206	nvme-rdma       	2
+19:46:59	fio             	116211	nvme-rdma       	2
+19:46:59	fio             	116215	nvme-rdma       	2
+19:46:59	fio             	116213	nvme-rdma       	2
+19:46:59	fio             	116206	nvme-rdma       	2
+19:46:59	fio             	116209	nvme-rdma       	2
+19:46:59	fio             	116211	nvme-rdma       	2
+19:46:59	fio             	116202	nvme-rdma       	2
+19:46:59	fio             	116205	nvme-rdma       	2
+19:46:59	fio             	116214	nvme-rdma       	2
+19:46:59	fio             	116207	nvme-rdma       	2
+19:46:59	fio             	116206	nvme-rdma       	2
+19:46:59	fio             	116205	nvme-rdma       	2
+19:46:59	fio             	116204	nvme-rdma       	2
+19:46:59	fio             	116202	nvme-rdma       	2
+19:46:59	fio             	116209	nvme-rdma       	2
+19:46:59	fio             	116202	nvme-rdma       	2
+19:46:59	fio             	116213	nvme-rdma       	2
+19:46:59	fio             	116217	nvme-rdma       	2
+19:46:59	fio             	116215	nvme-rdma       	2
+19:46:59	fio             	116208	nvme-rdma       	2
+19:46:59	fio             	116211	nvme-rdma       	2
+19:46:59	fio             	116211	nvme-rdma       	2
+19:46:59	fio             	116213	nvme-rdma       	2
+19:46:59	fio             	116204	nvme-rdma       	2
+19:46:59	fio             	116203	nvme-rdma       	2
+19:46:59	fio             	116214	nvme-rdma       	2
+19:46:59	fio             	116213	nvme-rdma       	2
+19:46:59	fio             	116202	nvme-rdma       	2
+19:46:59	fio             	116206	nvme-rdma       	2
+19:46:59	fio             	116204	nvme-rdma       	2
+19:46:59	fio             	116213	nvme-rdma       	2
+19:46:59	fio             	116211	nvme-rdma       	2
+19:46:59	fio             	116217	nvme-rdma       	2
+19:46:59	fio             	116207	nvme-rdma       	2
+19:46:59	fio             	116216	nvme-rdma       	2
+19:46:59	fio             	116207	nvme-rdma       	2
+19:46:59	fio             	116203	nvme-rdma       	2
+19:46:59	fio             	116208	nvme-rdma       	2
+19:46:59	fio             	116204	nvme-rdma       	2
+19:46:59	fio             	116212	nvme-rdma       	2
+19:46:59	fio             	116215	nvme-rdma       	2
+19:46:59	fio             	116204	nvme-rdma       	2
+19:46:59	fio             	116203	nvme-rdma       	2
+19:46:59	fio             	116218	nvme-rdma       	2
+19:46:59	fio             	116209	nvme-rdma       	2
+19:46:59	fio             	116211	nvme-rdma       	2
+19:46:59	fio             	116204	nvme-rdma       	2
+19:46:59	fio             	116206	nvme-rdma       	2
+19:46:59	fio             	116216	nvme-rdma       	2
+19:46:59	fio             	116203	nvme-rdma       	2
+19:46:59	fio             	116211	nvme-rdma       	2
+19:46:59	fio             	116211	nvme-rdma       	2
+19:46:59	fio             	116205	nvme-rdma       	2
+19:46:59	fio             	116208	nvme-rdma       	2
+19:46:59	fio             	116211	nvme-rdma       	2
+19:46:59	fio             	116215	nvme-rdma       	2
+19:46:59	fio             	116214	nvme-rdma       	2
+19:46:59	fio             	116216	nvme-rdma       	2
+19:46:59	fio             	116212	nvme-rdma       	2
+19:46:59	fio             	116207	nvme-rdma       	2
+19:46:59	fio             	116210	nvme-rdma       	2
+19:46:59	fio             	116205	nvme-rdma       	2
+19:46:59	fio             	116215	nvme-rdma       	2
+19:46:59	fio             	116214	nvme-rdma       	2
+19:47:03	fio             	116216	nvme-rdma       	2
+19:47:03	fio             	116211	nvme-rdma       	2
+19:47:03	fio             	116204	nvme-rdma       	2
+19:47:03	fio             	116214	nvme-rdma       	2
+19:47:03	fio             	116214	nvme-rdma       	2
+19:47:03	fio             	116217	nvme-rdma       	2
+19:47:03	fio             	116207	nvme-rdma       	2
+19:47:03	fio             	116209	nvme-rdma       	2
+19:47:03	fio             	116216	nvme-rdma       	2
+19:47:03	fio             	116210	nvme-rdma       	2
+
+--- outliers last 10s ---
+@outliers[nvme-rdma]: 207
+19:47:06	fio             	116209	nvme-rdma       	2
+19:47:06	fio             	116212	nvme-rdma       	2
+19:47:06	fio             	116214	nvme-rdma       	2
+19:47:06	fio             	116212	nvme-rdma       	2
+19:47:06	fio             	116215	nvme-rdma       	2
+19:47:06	fio             	116217	nvme-rdma       	2
+19:47:06	fio             	116203	nvme-rdma       	2
+19:47:06	fio             	116204	nvme-rdma       	2
+19:47:06	fio             	116210	nvme-rdma       	2
+19:47:06	fio             	116216	nvme-rdma       	2
+19:47:06	fio             	116215	nvme-rdma       	2
+19:47:06	fio             	116214	nvme-rdma       	2
+19:47:06	fio             	116202	nvme-rdma       	2
+19:47:06	fio             	116213	nvme-rdma       	2
+19:47:06	fio             	116205	nvme-rdma       	2
+19:47:06	fio             	116211	nvme-rdma       	2
+19:47:09	fio             	116202	nvme-rdma       	2
+19:47:09	fio             	116218	nvme-rdma       	2
+19:47:12	fio             	116208	nvme-rdma       	2
+19:47:12	fio             	116203	nvme-rdma       	2
+19:47:12	fio             	116215	nvme-rdma       	2
+19:47:12	fio             	116210	nvme-rdma       	2
+19:47:12	fio             	116214	nvme-rdma       	2
+19:47:12	fio             	116214	nvme-rdma       	2
+19:47:12	fio             	116212	nvme-rdma       	2
+19:47:12	fio             	116214	nvme-rdma       	2
+19:47:12	fio             	116206	nvme-rdma       	2
+19:47:12	fio             	116209	nvme-rdma       	2
+19:47:12	fio             	116216	nvme-rdma       	2
+19:47:12	fio             	116207	nvme-rdma       	2
+19:47:12	fio             	116202	nvme-rdma       	2
+19:47:12	fio             	116210	nvme-rdma       	2
+19:47:12	fio             	116202	nvme-rdma       	2
+19:47:12	fio             	116207	nvme-rdma       	2
+19:47:12	fio             	116202	nvme-rdma       	2
+19:47:12	fio             	116206	nvme-rdma       	2
+19:47:12	fio             	116216	nvme-rdma       	2
+19:47:12	fio             	116203	nvme-rdma       	2
+19:47:12	fio             	116214	nvme-rdma       	2
+19:47:12	fio             	116211	nvme-rdma       	2
+19:47:12	fio             	116203	nvme-rdma       	2
+19:47:12	fio             	116212	nvme-rdma       	2
+19:47:12	fio             	116210	nvme-rdma       	2
+19:47:12	fio             	116206	nvme-rdma       	2
+19:47:12	fio             	116208	nvme-rdma       	2
+19:47:12	fio             	116211	nvme-rdma       	2
+19:47:12	fio             	116205	nvme-rdma       	2
+19:47:12	fio             	116217	nvme-rdma       	2
+19:47:12	fio             	116213	nvme-rdma       	2
+19:47:12	fio             	116217	nvme-rdma       	2
+19:47:12	fio             	116202	nvme-rdma       	2
+19:47:12	fio             	116207	nvme-rdma       	2
+19:47:12	fio             	116209	nvme-rdma       	2
+19:47:12	fio             	116211	nvme-rdma       	2
+19:47:12	fio             	116216	nvme-rdma       	2
+19:47:12	fio             	116202	nvme-rdma       	2
+19:47:12	fio             	116204	nvme-rdma       	2
+19:47:12	fio             	116204	nvme-rdma       	2
+19:47:12	fio             	116207	nvme-rdma       	2
+19:47:12	fio             	116213	nvme-rdma       	2
+19:47:12	fio             	116204	nvme-rdma       	2
+19:47:12	fio             	116204	nvme-rdma       	2
+19:47:12	fio             	116205	nvme-rdma       	2
+19:47:12	fio             	116216	nvme-rdma       	2
+19:47:12	fio             	116215	nvme-rdma       	2
+19:47:12	fio             	116211	nvme-rdma       	2
+19:47:12	fio             	116205	nvme-rdma       	2
+19:47:12	fio             	116204	nvme-rdma       	2
+19:47:12	fio             	116210	nvme-rdma       	2
+19:47:12	fio             	116205	nvme-rdma       	2
+19:47:12	fio             	116202	nvme-rdma       	2
+19:47:12	fio             	116209	nvme-rdma       	2
+19:47:12	fio             	116217	nvme-rdma       	2
+19:47:12	fio             	116208	nvme-rdma       	2
+19:47:12	fio             	116209	nvme-rdma       	2
+19:47:12	fio             	116203	nvme-rdma       	2
+19:47:12	fio             	116214	nvme-rdma       	2
+19:47:12	fio             	116216	nvme-rdma       	2
+19:47:12	fio             	116203	nvme-rdma       	2
+19:47:12	fio             	116215	nvme-rdma       	2
+19:47:12	fio             	116208	nvme-rdma       	2
+19:47:12	fio             	116203	nvme-rdma       	2
+19:47:12	fio             	116207	nvme-rdma       	2
+19:47:12	fio             	116217	nvme-rdma       	2
+19:47:12	fio             	116209	nvme-rdma       	2
+19:47:12	fio             	116216	nvme-rdma       	2
+19:47:12	fio             	116218	nvme-rdma       	2
+19:47:12	fio             	116216	nvme-rdma       	2
+19:47:12	fio             	116216	nvme-rdma       	2
+19:47:12	fio             	116205	nvme-rdma       	2
+19:47:12	fio             	116209	nvme-rdma       	2
+19:47:12	fio             	116202	nvme-rdma       	2
+19:47:12	fio             	116208	nvme-rdma       	2
+19:47:12	fio             	116208	nvme-rdma       	2
+19:47:12	fio             	116213	nvme-rdma       	2
+19:47:12	fio             	116210	nvme-rdma       	2
+19:47:12	fio             	116214	nvme-rdma       	2
+19:47:12	fio             	116203	nvme-rdma       	2
+19:47:12	fio             	116207	nvme-rdma       	2
+19:47:12	fio             	116215	nvme-rdma       	2
+19:47:12	fio             	116215	nvme-rdma       	2
+19:47:12	fio             	116202	nvme-rdma       	2
+19:47:12	fio             	116211	nvme-rdma       	2
+19:47:12	fio             	116217	nvme-rdma       	2
+19:47:12	fio             	116203	nvme-rdma       	2
+19:47:12	fio             	116202	nvme-rdma       	2
+19:47:12	fio             	116207	nvme-rdma       	2
+19:47:12	fio             	116209	nvme-rdma       	2
+19:47:12	fio             	116212	nvme-rdma       	2
+19:47:12	fio             	116213	nvme-rdma       	2
+19:47:12	fio             	116214	nvme-rdma       	2
+19:47:12	fio             	116204	nvme-rdma       	2
+19:47:12	fio             	116214	nvme-rdma       	2
+19:47:12	fio             	116214	nvme-rdma       	2
+19:47:12	fio             	116203	nvme-rdma       	2
+19:47:12	fio             	116203	nvme-rdma       	2
+19:47:12	fio             	116209	nvme-rdma       	2
+19:47:12	fio             	116212	nvme-rdma       	2
+19:47:12	fio             	116206	nvme-rdma       	2
+19:47:12	fio             	116206	nvme-rdma       	2
+19:47:12	fio             	116208	nvme-rdma       	2
+19:47:12	fio             	116207	nvme-rdma       	2
+19:47:12	fio             	116212	nvme-rdma       	2
+19:47:12	fio             	116212	nvme-rdma       	2
+19:47:12	fio             	116205	nvme-rdma       	2
+19:47:12	fio             	116212	nvme-rdma       	2
+19:47:12	fio             	116215	nvme-rdma       	2
+19:47:12	fio             	116218	nvme-rdma       	2
+19:47:12	fio             	116204	nvme-rdma       	2
+19:47:12	fio             	116215	nvme-rdma       	2
+19:47:12	fio             	116217	nvme-rdma       	2
+19:47:12	fio             	116202	nvme-rdma       	2
+19:47:12	fio             	116208	nvme-rdma       	2
+19:47:12	fio             	116206	nvme-rdma       	2
+
+--- outliers last 10s ---
+@outliers[nvme-rdma]: 134
+
+--- outliers last 10s ---
+
+19:47:31	fio             	116203	nvme-rdma       	2
+19:47:31	fio             	116212	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116211	nvme-rdma       	2
+19:47:31	fio             	116216	nvme-rdma       	2
+19:47:31	fio             	116207	nvme-rdma       	2
+19:47:31	fio             	116213	nvme-rdma       	2
+19:47:31	fio             	116203	nvme-rdma       	2
+19:47:31	fio             	116202	nvme-rdma       	2
+19:47:31	fio             	116216	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116209	nvme-rdma       	2
+19:47:31	fio             	116207	nvme-rdma       	2
+19:47:31	fio             	116206	nvme-rdma       	2
+19:47:31	fio             	116205	nvme-rdma       	2
+19:47:31	fio             	116213	nvme-rdma       	2
+19:47:31	fio             	116210	nvme-rdma       	2
+19:47:31	fio             	116210	nvme-rdma       	2
+19:47:31	fio             	116206	nvme-rdma       	2
+19:47:31	fio             	116213	nvme-rdma       	2
+19:47:31	fio             	116209	nvme-rdma       	2
+19:47:31	fio             	116212	nvme-rdma       	2
+19:47:31	fio             	116210	nvme-rdma       	2
+19:47:31	fio             	116217	nvme-rdma       	2
+19:47:31	fio             	116213	nvme-rdma       	2
+19:47:31	fio             	116206	nvme-rdma       	2
+19:47:31	fio             	116214	nvme-rdma       	2
+19:47:31	fio             	116214	nvme-rdma       	2
+19:47:31	fio             	116202	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116216	nvme-rdma       	2
+19:47:31	fio             	116203	nvme-rdma       	2
+19:47:31	fio             	116215	nvme-rdma       	2
+19:47:31	fio             	116216	nvme-rdma       	2
+19:47:31	fio             	116212	nvme-rdma       	2
+19:47:31	fio             	116202	nvme-rdma       	2
+19:47:31	fio             	116206	nvme-rdma       	2
+19:47:31	fio             	116217	nvme-rdma       	2
+19:47:31	fio             	116210	nvme-rdma       	2
+19:47:31	fio             	116210	nvme-rdma       	2
+19:47:31	fio             	116205	nvme-rdma       	2
+19:47:31	fio             	116210	nvme-rdma       	2
+19:47:31	fio             	116209	nvme-rdma       	2
+19:47:31	fio             	116209	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116218	nvme-rdma       	2
+19:47:31	fio             	116203	nvme-rdma       	2
+19:47:31	fio             	116213	nvme-rdma       	2
+19:47:31	fio             	116214	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116216	nvme-rdma       	2
+19:47:31	fio             	116206	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116207	nvme-rdma       	2
+19:47:31	fio             	116211	nvme-rdma       	2
+19:47:31	fio             	116205	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116202	nvme-rdma       	2
+19:47:31	fio             	116208	nvme-rdma       	2
+19:47:31	fio             	116208	nvme-rdma       	2
+19:47:31	fio             	116209	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116209	nvme-rdma       	2
+19:47:31	fio             	116211	nvme-rdma       	2
+19:47:31	fio             	116218	nvme-rdma       	2
+19:47:31	fio             	116215	nvme-rdma       	2
+19:47:31	fio             	116203	nvme-rdma       	2
+19:47:31	fio             	116208	nvme-rdma       	2
+19:47:31	fio             	116202	nvme-rdma       	2
+19:47:31	fio             	116206	nvme-rdma       	2
+19:47:31	fio             	116216	nvme-rdma       	2
+19:47:31	fio             	116210	nvme-rdma       	2
+19:47:31	fio             	116215	nvme-rdma       	2
+19:47:31	fio             	116212	nvme-rdma       	2
+19:47:31	fio             	116213	nvme-rdma       	2
+19:47:31	fio             	116205	nvme-rdma       	2
+19:47:31	fio             	116202	nvme-rdma       	2
+19:47:31	fio             	116215	nvme-rdma       	2
+19:47:31	fio             	116216	nvme-rdma       	2
+19:47:31	fio             	116214	nvme-rdma       	2
+19:47:31	fio             	116217	nvme-rdma       	2
+19:47:31	fio             	116218	nvme-rdma       	2
+19:47:31	fio             	116202	nvme-rdma       	2
+19:47:31	fio             	116208	nvme-rdma       	2
+19:47:31	fio             	116203	nvme-rdma       	2
+19:47:31	fio             	116212	nvme-rdma       	2
+19:47:31	fio             	116209	nvme-rdma       	2
+19:47:31	fio             	116202	nvme-rdma       	2
+19:47:31	fio             	116208	nvme-rdma       	2
+19:47:31	fio             	116218	nvme-rdma       	2
+19:47:31	fio             	116217	nvme-rdma       	2
+19:47:31	fio             	116202	nvme-rdma       	2
+19:47:31	fio             	116214	nvme-rdma       	2
+19:47:31	fio             	116206	nvme-rdma       	2
+19:47:31	fio             	116203	nvme-rdma       	2
+19:47:31	fio             	116202	nvme-rdma       	2
+19:47:31	fio             	116202	nvme-rdma       	2
+19:47:31	fio             	116214	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116202	nvme-rdma       	2
+19:47:31	fio             	116217	nvme-rdma       	2
+19:47:31	fio             	116206	nvme-rdma       	2
+19:47:31	fio             	116205	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116212	nvme-rdma       	2
+19:47:31	fio             	116208	nvme-rdma       	2
+19:47:31	fio             	116214	nvme-rdma       	2
+19:47:31	fio             	116210	nvme-rdma       	2
+19:47:31	fio             	116215	nvme-rdma       	2
+19:47:31	fio             	116217	nvme-rdma       	2
+19:47:31	fio             	116214	nvme-rdma       	2
+19:47:31	fio             	116212	nvme-rdma       	2
+19:47:31	fio             	116215	nvme-rdma       	2
+19:47:31	fio             	116207	nvme-rdma       	2
+19:47:31	fio             	116214	nvme-rdma       	2
+19:47:31	fio             	116217	nvme-rdma       	2
+19:47:31	fio             	116206	nvme-rdma       	2
+19:47:31	fio             	116211	nvme-rdma       	2
+19:47:31	fio             	116202	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116205	nvme-rdma       	2
+19:47:31	fio             	116216	nvme-rdma       	2
+19:47:31	fio             	116217	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116209	nvme-rdma       	2
+19:47:31	fio             	116208	nvme-rdma       	2
+19:47:31	fio             	116202	nvme-rdma       	2
+19:47:31	fio             	116217	nvme-rdma       	2
+19:47:31	fio             	116216	nvme-rdma       	2
+19:47:31	fio             	116211	nvme-rdma       	2
+19:47:31	fio             	116208	nvme-rdma       	2
+19:47:31	fio             	116217	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116202	nvme-rdma       	2
+19:47:31	fio             	116205	nvme-rdma       	2
+19:47:31	fio             	116204	nvme-rdma       	2
+19:47:31	fio             	116212	nvme-rdma       	2
+19:47:31	fio             	116217	nvme-rdma       	2
+
+--- outliers last 10s ---
+@outliers[nvme-rdma]: 140
+19:47:37	fio             	116208	nvme-rdma       	2
+19:47:37	fio             	116209	nvme-rdma       	2
+19:47:37	fio             	116214	nvme-rdma       	2
+19:47:37	fio             	116207	nvme-rdma       	2
+19:47:37	fio             	116211	nvme-rdma       	2
+19:47:37	fio             	116209	nvme-rdma       	2
+19:47:37	fio             	116208	nvme-rdma       	2
+19:47:37	fio             	116214	nvme-rdma       	2
+19:47:37	fio             	116211	nvme-rdma       	2
+19:47:37	fio             	116206	nvme-rdma       	2
+19:47:37	fio             	116215	nvme-rdma       	2
+19:47:38	fio             	116202	nvme-rdma       	2
+19:47:38	fio             	116214	nvme-rdma       	2
+19:47:38	fio             	116212	nvme-rdma       	2
+19:47:38	fio             	116203	nvme-rdma       	2
+19:47:38	fio             	116216	nvme-rdma       	2
+19:47:38	fio             	116207	nvme-rdma       	2
+19:47:38	fio             	116217	nvme-rdma       	2
+19:47:38	fio             	116205	nvme-rdma       	2
+19:47:38	fio             	116217	nvme-rdma       	2
+19:47:38	fio             	116210	nvme-rdma       	2
+19:47:38	fio             	116205	nvme-rdma       	2
+19:47:38	fio             	116207	nvme-rdma       	2
+19:47:38	fio             	116216	nvme-rdma       	2
+19:47:38	fio             	116218	nvme-rdma       	2
+19:47:38	fio             	116208	nvme-rdma       	2
+19:47:38	fio             	116217	nvme-rdma       	2
+19:47:38	fio             	116206	nvme-rdma       	2
+19:47:38	fio             	116212	nvme-rdma       	2
+19:47:38	fio             	116206	nvme-rdma       	2
+19:47:38	fio             	116216	nvme-rdma       	2
+19:47:38	fio             	116212	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116207	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116205	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116213	nvme-rdma       	2
+19:47:38	fio             	116216	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116217	nvme-rdma       	2
+19:47:38	fio             	116202	nvme-rdma       	2
+19:47:38	fio             	116205	nvme-rdma       	2
+19:47:38	fio             	116214	nvme-rdma       	2
+19:47:38	fio             	116214	nvme-rdma       	2
+19:47:38	fio             	116208	nvme-rdma       	2
+19:47:38	fio             	116210	nvme-rdma       	2
+19:47:38	fio             	116202	nvme-rdma       	2
+19:47:38	fio             	116210	nvme-rdma       	2
+19:47:38	fio             	116209	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116215	nvme-rdma       	2
+19:47:38	fio             	116209	nvme-rdma       	2
+19:47:38	fio             	116214	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116205	nvme-rdma       	2
+19:47:38	fio             	116203	nvme-rdma       	2
+19:47:38	fio             	116218	nvme-rdma       	2
+19:47:38	fio             	116207	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116203	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116212	nvme-rdma       	2
+19:47:38	fio             	116217	nvme-rdma       	2
+19:47:38	fio             	116210	nvme-rdma       	2
+19:47:38	fio             	116217	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116216	nvme-rdma       	2
+19:47:38	fio             	116211	nvme-rdma       	2
+19:47:38	fio             	116214	nvme-rdma       	2
+19:47:38	fio             	116210	nvme-rdma       	2
+19:47:38	fio             	116210	nvme-rdma       	2
+19:47:38	fio             	116205	nvme-rdma       	2
+19:47:38	fio             	116207	nvme-rdma       	2
+19:47:38	fio             	116216	nvme-rdma       	2
+19:47:38	fio             	116215	nvme-rdma       	2
+19:47:38	fio             	116211	nvme-rdma       	2
+19:47:38	fio             	116217	nvme-rdma       	2
+19:47:38	fio             	116216	nvme-rdma       	2
+19:47:38	fio             	116209	nvme-rdma       	2
+19:47:38	fio             	116206	nvme-rdma       	2
+19:47:38	fio             	116206	nvme-rdma       	2
+19:47:38	fio             	116216	nvme-rdma       	2
+19:47:38	fio             	116214	nvme-rdma       	2
+19:47:38	fio             	116215	nvme-rdma       	2
+19:47:38	fio             	116205	nvme-rdma       	2
+19:47:38	fio             	116202	nvme-rdma       	2
+19:47:38	fio             	116211	nvme-rdma       	2
+19:47:38	fio             	116212	nvme-rdma       	2
+19:47:38	fio             	116203	nvme-rdma       	2
+19:47:38	fio             	116209	nvme-rdma       	2
+19:47:38	fio             	116216	nvme-rdma       	2
+19:47:38	fio             	116203	nvme-rdma       	2
+19:47:38	fio             	116203	nvme-rdma       	2
+19:47:38	fio             	116208	nvme-rdma       	2
+19:47:38	fio             	116209	nvme-rdma       	2
+19:47:38	fio             	116208	nvme-rdma       	2
+19:47:38	fio             	116218	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116208	nvme-rdma       	2
+19:47:38	fio             	116202	nvme-rdma       	2
+19:47:38	fio             	116217	nvme-rdma       	2
+19:47:38	fio             	116207	nvme-rdma       	2
+19:47:38	fio             	116216	nvme-rdma       	2
+19:47:38	fio             	116208	nvme-rdma       	2
+19:47:38	fio             	116205	nvme-rdma       	2
+19:47:38	fio             	116203	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116208	nvme-rdma       	2
+19:47:38	fio             	116213	nvme-rdma       	2
+19:47:38	fio             	116208	nvme-rdma       	2
+19:47:38	fio             	116215	nvme-rdma       	2
+19:47:38	fio             	116218	nvme-rdma       	2
+19:47:38	fio             	116202	nvme-rdma       	2
+19:47:38	fio             	116202	nvme-rdma       	2
+19:47:38	fio             	116205	nvme-rdma       	2
+19:47:38	fio             	116202	nvme-rdma       	2
+19:47:38	fio             	116213	nvme-rdma       	2
+19:47:38	fio             	116207	nvme-rdma       	2
+19:47:38	fio             	116211	nvme-rdma       	2
+19:47:38	fio             	116205	nvme-rdma       	2
+19:47:38	fio             	116218	nvme-rdma       	2
+19:47:38	fio             	116205	nvme-rdma       	2
+19:47:38	fio             	116213	nvme-rdma       	2
+19:47:38	fio             	116207	nvme-rdma       	2
+19:47:38	fio             	116211	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116205	nvme-rdma       	2
+19:47:38	fio             	116215	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116216	nvme-rdma       	2
+19:47:38	fio             	116211	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116216	nvme-rdma       	2
+19:47:38	fio             	116215	nvme-rdma       	2
+19:47:38	fio             	116218	nvme-rdma       	2
+19:47:38	fio             	116216	nvme-rdma       	2
+19:47:38	fio             	116208	nvme-rdma       	2
+19:47:38	fio             	116207	nvme-rdma       	2
+19:47:38	fio             	116216	nvme-rdma       	2
+19:47:38	fio             	116202	nvme-rdma       	2
+19:47:38	fio             	116204	nvme-rdma       	2
+19:47:38	fio             	116205	nvme-rdma       	2
+19:47:38	fio             	116212	nvme-rdma       	2
+19:47:38	fio             	116214	nvme-rdma       	2
+19:47:38	fio             	116216	nvme-rdma       	2
+19:47:41	fio             	116216	nvme-rdma       	2
+19:47:41	fio             	116217	nvme-rdma       	2
+19:47:41	fio             	116215	nvme-rdma       	2
+19:47:41	fio             	116216	nvme-rdma       	2
+19:47:41	fio             	116203	nvme-rdma       	2
+19:47:41	fio             	116212	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116206	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116214	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116214	nvme-rdma       	2
+19:47:41	fio             	116207	nvme-rdma       	2
+19:47:41	fio             	116204	nvme-rdma       	2
+19:47:41	fio             	116218	nvme-rdma       	2
+19:47:41	fio             	116212	nvme-rdma       	2
+19:47:41	fio             	116208	nvme-rdma       	2
+19:47:41	fio             	116215	nvme-rdma       	2
+19:47:41	fio             	116218	nvme-rdma       	2
+19:47:41	fio             	116206	nvme-rdma       	2
+19:47:41	fio             	116203	nvme-rdma       	2
+19:47:41	fio             	116217	nvme-rdma       	2
+19:47:41	fio             	116215	nvme-rdma       	2
+19:47:41	fio             	116213	nvme-rdma       	2
+19:47:41	fio             	116206	nvme-rdma       	2
+19:47:41	fio             	116213	nvme-rdma       	2
+19:47:41	fio             	116217	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116215	nvme-rdma       	2
+19:47:41	fio             	116215	nvme-rdma       	2
+19:47:41	fio             	116210	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116218	nvme-rdma       	2
+19:47:41	fio             	116214	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116210	nvme-rdma       	2
+19:47:41	fio             	116207	nvme-rdma       	2
+19:47:41	fio             	116214	nvme-rdma       	2
+19:47:41	fio             	116211	nvme-rdma       	2
+19:47:41	fio             	116217	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116212	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116214	nvme-rdma       	2
+19:47:41	fio             	116211	nvme-rdma       	2
+19:47:41	fio             	116213	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116216	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116216	nvme-rdma       	2
+19:47:41	fio             	116203	nvme-rdma       	2
+19:47:41	fio             	116217	nvme-rdma       	2
+19:47:41	fio             	116217	nvme-rdma       	2
+19:47:41	fio             	116215	nvme-rdma       	2
+19:47:41	fio             	116203	nvme-rdma       	2
+19:47:41	fio             	116217	nvme-rdma       	2
+19:47:41	fio             	116205	nvme-rdma       	2
+19:47:41	fio             	116212	nvme-rdma       	2
+19:47:41	fio             	116215	nvme-rdma       	2
+19:47:41	fio             	116210	nvme-rdma       	2
+19:47:41	fio             	116212	nvme-rdma       	2
+19:47:41	fio             	116203	nvme-rdma       	2
+19:47:41	fio             	116215	nvme-rdma       	2
+19:47:41	fio             	116204	nvme-rdma       	2
+19:47:41	fio             	116203	nvme-rdma       	2
+19:47:41	fio             	116207	nvme-rdma       	2
+19:47:41	fio             	116213	nvme-rdma       	2
+19:47:41	fio             	116216	nvme-rdma       	2
+19:47:41	fio             	116207	nvme-rdma       	2
+19:47:41	fio             	116208	nvme-rdma       	2
+19:47:41	fio             	116208	nvme-rdma       	2
+19:47:41	fio             	116214	nvme-rdma       	2
+19:47:41	fio             	116207	nvme-rdma       	2
+19:47:41	fio             	116205	nvme-rdma       	2
+19:47:41	fio             	116210	nvme-rdma       	2
+19:47:41	fio             	116208	nvme-rdma       	2
+19:47:41	fio             	116212	nvme-rdma       	2
+19:47:41	fio             	116204	nvme-rdma       	2
+19:47:41	fio             	116204	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116204	nvme-rdma       	2
+19:47:41	fio             	116211	nvme-rdma       	2
+19:47:41	fio             	116203	nvme-rdma       	2
+19:47:41	fio             	116216	nvme-rdma       	2
+19:47:41	fio             	116203	nvme-rdma       	2
+19:47:41	fio             	116212	nvme-rdma       	2
+19:47:41	fio             	116208	nvme-rdma       	2
+19:47:41	fio             	116213	nvme-rdma       	2
+19:47:41	fio             	116216	nvme-rdma       	2
+19:47:41	fio             	116213	nvme-rdma       	2
+19:47:41	fio             	116218	nvme-rdma       	2
+19:47:41	fio             	116210	nvme-rdma       	2
+19:47:41	fio             	116204	nvme-rdma       	2
+19:47:41	fio             	116204	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116207	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116207	nvme-rdma       	2
+19:47:41	fio             	116206	nvme-rdma       	2
+19:47:41	fio             	116203	nvme-rdma       	2
+19:47:41	fio             	116216	nvme-rdma       	2
+19:47:41	fio             	116217	nvme-rdma       	2
+19:47:41	fio             	116214	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116217	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116210	nvme-rdma       	2
+19:47:41	fio             	116210	nvme-rdma       	2
+19:47:41	fio             	116210	nvme-rdma       	2
+19:47:41	fio             	116206	nvme-rdma       	2
+19:47:41	fio             	116203	nvme-rdma       	2
+19:47:41	fio             	116215	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116211	nvme-rdma       	2
+19:47:41	fio             	116207	nvme-rdma       	2
+19:47:41	fio             	116217	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116204	nvme-rdma       	2
+19:47:41	fio             	116218	nvme-rdma       	2
+19:47:41	fio             	116204	nvme-rdma       	2
+19:47:41	fio             	116212	nvme-rdma       	2
+19:47:41	fio             	116206	nvme-rdma       	2
+19:47:41	fio             	116212	nvme-rdma       	2
+19:47:41	fio             	116214	nvme-rdma       	2
+19:47:41	fio             	116213	nvme-rdma       	2
+19:47:41	fio             	116205	nvme-rdma       	2
+19:47:41	fio             	116211	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116210	nvme-rdma       	2
+19:47:41	fio             	116205	nvme-rdma       	2
+19:47:41	fio             	116214	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116211	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116211	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116214	nvme-rdma       	2
+19:47:41	fio             	116216	nvme-rdma       	2
+19:47:41	fio             	116212	nvme-rdma       	2
+19:47:41	fio             	116204	nvme-rdma       	2
+19:47:41	fio             	116205	nvme-rdma       	2
+19:47:41	fio             	116204	nvme-rdma       	2
+19:47:41	fio             	116216	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116214	nvme-rdma       	2
+19:47:41	fio             	116208	nvme-rdma       	2
+19:47:41	fio             	116206	nvme-rdma       	2
+19:47:41	fio             	116215	nvme-rdma       	2
+19:47:41	fio             	116215	nvme-rdma       	2
+19:47:41	fio             	116215	nvme-rdma       	2
+19:47:41	fio             	116203	nvme-rdma       	2
+19:47:41	fio             	116210	nvme-rdma       	2
+19:47:41	fio             	116208	nvme-rdma       	2
+19:47:41	fio             	116214	nvme-rdma       	2
+19:47:41	fio             	116212	nvme-rdma       	2
+19:47:41	fio             	116208	nvme-rdma       	2
+19:47:41	fio             	116207	nvme-rdma       	2
+19:47:41	fio             	116213	nvme-rdma       	2
+19:47:41	fio             	116211	nvme-rdma       	2
+19:47:41	fio             	116215	nvme-rdma       	2
+19:47:41	fio             	116212	nvme-rdma       	2
+19:47:41	fio             	116204	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116211	nvme-rdma       	2
+19:47:41	fio             	116212	nvme-rdma       	2
+19:47:41	fio             	116212	nvme-rdma       	2
+19:47:41	fio             	116203	nvme-rdma       	2
+19:47:41	fio             	116206	nvme-rdma       	2
+19:47:41	fio             	116210	nvme-rdma       	2
+19:47:41	fio             	116208	nvme-rdma       	2
+19:47:41	fio             	116207	nvme-rdma       	2
+19:47:41	fio             	116216	nvme-rdma       	2
+19:47:41	fio             	116213	nvme-rdma       	2
+19:47:41	fio             	116204	nvme-rdma       	2
+19:47:41	fio             	116207	nvme-rdma       	2
+19:47:41	fio             	116208	nvme-rdma       	2
+19:47:41	fio             	116209	nvme-rdma       	2
+19:47:41	fio             	116208	nvme-rdma       	2
+19:47:41	fio             	116203	nvme-rdma       	2
+19:47:41	fio             	116216	nvme-rdma       	2
+19:47:41	fio             	116215	nvme-rdma       	2
+19:47:41	fio             	116206	nvme-rdma       	2
+19:47:41	fio             	116214	nvme-rdma       	2
+19:47:41	fio             	116206	nvme-rdma       	2
+19:47:41	fio             	116208	nvme-rdma       	2
+19:47:41	fio             	116210	nvme-rdma       	2
+19:47:41	fio             	116207	nvme-rdma       	2
+19:47:41	fio             	116203	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116204	nvme-rdma       	2
+19:47:41	fio             	116216	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116210	nvme-rdma       	2
+19:47:41	fio             	116213	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:41	fio             	116205	nvme-rdma       	2
+19:47:41	fio             	116217	nvme-rdma       	2
+19:47:41	fio             	116210	nvme-rdma       	2
+19:47:41	fio             	116202	nvme-rdma       	2
+19:47:44	fio             	116215	nvme-rdma       	2
+19:47:44	fio             	116206	nvme-rdma       	2
+19:47:44	fio             	116209	nvme-rdma       	2
+19:47:44	fio             	116211	nvme-rdma       	2
+19:47:44	fio             	116217	nvme-rdma       	2
+19:47:44	fio             	116216	nvme-rdma       	2
+19:47:44	fio             	116206	nvme-rdma       	2
+19:47:44	fio             	116203	nvme-rdma       	2
+19:47:44	fio             	116214	nvme-rdma       	2
+19:47:44	fio             	116210	nvme-rdma       	2
+19:47:44	fio             	116205	nvme-rdma       	2
+19:47:44	fio             	116210	nvme-rdma       	2
+19:47:44	fio             	116209	nvme-rdma       	2
+19:47:44	fio             	116211	nvme-rdma       	2
+19:47:44	fio             	116215	nvme-rdma       	2
+19:47:44	fio             	116210	nvme-rdma       	2
+19:47:44	fio             	116214	nvme-rdma       	2
+19:47:44	fio             	116207	nvme-rdma       	2
+19:47:44	fio             	116210	nvme-rdma       	2
+19:47:44	fio             	116216	nvme-rdma       	2
+19:47:44	fio             	116218	nvme-rdma       	2
+19:47:44	fio             	116215	nvme-rdma       	2
+19:47:44	fio             	116203	nvme-rdma       	2
+19:47:44	fio             	116204	nvme-rdma       	2
+19:47:44	fio             	116211	nvme-rdma       	2
+19:47:44	fio             	116206	nvme-rdma       	2
+19:47:44	fio             	116214	nvme-rdma       	2
+19:47:44	fio             	116211	nvme-rdma       	2
+19:47:44	fio             	116210	nvme-rdma       	2
+19:47:44	fio             	116214	nvme-rdma       	2
+19:47:44	fio             	116202	nvme-rdma       	2
+19:47:44	fio             	116207	nvme-rdma       	2
+19:47:44	fio             	116216	nvme-rdma       	2
+19:47:44	fio             	116205	nvme-rdma       	2
+19:47:44	fio             	116202	nvme-rdma       	2
+19:47:44	fio             	116203	nvme-rdma       	2
+19:47:44	fio             	116206	nvme-rdma       	2
+19:47:44	fio             	116205	nvme-rdma       	2
+19:47:44	fio             	116208	nvme-rdma       	2
+19:47:44	fio             	116210	nvme-rdma       	2
+19:47:44	fio             	116214	nvme-rdma       	2
+19:47:44	fio             	116216	nvme-rdma       	2
+19:47:44	fio             	116211	nvme-rdma       	2
+19:47:44	fio             	116214	nvme-rdma       	2
+19:47:44	fio             	116210	nvme-rdma       	2
+19:47:44	fio             	116211	nvme-rdma       	2
+19:47:44	fio             	116207	nvme-rdma       	2
+19:47:44	fio             	116213	nvme-rdma       	2
+
+--- outliers last 10s ---
+@outliers[nvme-rdma]: 402
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+--- outliers last 10s ---
+
+
+
+
+
+
+
