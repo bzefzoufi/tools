@@ -1,0 +1,19 @@
+# verify the key matches between submit and complete
+sudo bpftrace -e '
+kprobe:nvme_rdma_queue_rq {
+    $rq = *(uint64*)arg0;
+    @start[$rq] = nsecs;
+}
+kprobe:nvme_rdma_complete_rq {
+    $key_ns = @start[arg0];
+    if ($key_ns > 0) {
+        @matched = count();
+    } else {
+        @missed = count();
+    }
+    delete(@start[arg0]);
+}
+interval:s:2 {
+    print(@matched);
+    print(@missed);
+}'
