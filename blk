@@ -1,0 +1,7 @@
+sudo bpftrace -e '
+kprobe:blk_mq_start_request {
+    printf("start arg0=%lx\n", arg0);
+}
+kprobe:blk_mq_end_request {
+    printf("end   arg0=%lx\n", arg0);
+}' 2>/dev/null | head -20
