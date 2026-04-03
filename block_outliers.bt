@@ -2,7 +2,7 @@ config = { max_map_keys = 65535 }
 
 BEGIN {
     printf("%-10s\t%-16s\t%-6s\t%-16s\t%s\n",
-           "TIME", "COMM", "PID", "DISK", "LAT(us)");
+           "TIME", "COMM", "PID", "DISK", "LAT(ms)");
 }
 
 kprobe:blk_mq_start_request {
@@ -16,19 +16,19 @@ kprobe:blk_mq_end_request {
     $key_ns = @start[arg0];
     if ($key_ns == 0) { return; }
 
-    $lat_us = (nsecs - $key_ns) / 1000;
+    $lat_ms = (nsecs - $key_ns) / 1000000;
     $now    = nsecs / 1000000000;
     $hh     = ($now % 86400) / 3600;
     $mm     = ($now % 3600)  / 60;
     $ss     = $now % 60;
 
-    if ($lat_us > 500) {
+    if ($lat_ms > 500) {
         printf("%02d:%02d:%02d\t%-16s\t%-6d\t%-16s\t%d\n",
                $hh, $mm, $ss,
                @comm_m[arg0],
                @pid_m[arg0],
                "nvme-rdma",
-               $lat_us);
+               $lat_ms);
 
         @outliers["nvme-rdma"] = count();
     }
