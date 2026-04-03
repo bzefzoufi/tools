@@ -1,0 +1,18 @@
+sudo bpftrace -e '
+kprobe:nvme_rdma_queue_rq {
+    /* try arg1 as request pointer */
+    @start[arg1] = nsecs;
+}
+kprobe:nvme_rdma_complete_rq {
+    $key_ns = @start[arg0];
+    if ($key_ns > 0) {
+        @matched = count();
+    } else {
+        @missed = count();
+    }
+    delete(@start[arg0]);
+}
+interval:s:2 {
+    print(@matched);
+    print(@missed);
+}'
