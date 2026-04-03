@@ -1,0 +1,12 @@
+sudo bpftrace -e '
+kprobe:nvme_rdma_queue_rq {
+    /* try reading request at different offsets from arg0 */
+    printf("queue_rq arg0=%lx off0=%lx off8=%lx off16=%lx\n",
+           arg0,
+           *(uint64*)arg0,
+           *(uint64*)(arg0+8),
+           *(uint64*)(arg0+16));
+}
+kprobe:nvme_rdma_complete_rq {
+    printf("complete_rq arg0=%lx\n", arg0);
+}' 2>/dev/null | head -30
