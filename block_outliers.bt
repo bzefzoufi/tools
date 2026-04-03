@@ -22,7 +22,7 @@ kprobe:blk_mq_end_request {
     $mm     = ($now % 3600)  / 60;
     $ss     = $now % 60;
 
-    if ($lat_ms > 500) {
+    if ($lat_ms > 1) {
         printf("%02d:%02d:%02d\t%-16s\t%-6d\t%-16s\t%d\n",
                $hh, $mm, $ss,
                @comm_m[arg0],
