@@ -1,0 +1,52 @@
+config = { max_map_keys = 16384 }
+
+BEGIN {
+    printf("%-10s\t%-16s\t%-6s\t%-16s\t%s\n",
+           "TIME", "COMM", "PID", "DISK", "LAT(us)");
+}
+
+kprobe:blk_mq_start_request {
+    /* arg0 = struct request * — valid for ALL transports */
+    @start[arg0]  = nsecs;
+    @comm_m[arg0] = comm;
+    @pid_m[arg0]  = (uint64)pid;
+}
+
+kprobe:blk_mq_end_request {
+    $key_ns = @start[arg0];
+    if ($key_ns == 0) { return; }
+
+    $lat_us = (nsecs - $key_ns) / 1000;
+    $now    = nsecs / 1000000000;
+    $hh     = ($now % 86400) / 3600;
+    $mm     = ($now % 3600)  / 60;
+    $ss     = $now % 60;
+
+    if ($lat_us > 500) {
+        printf("%02d:%02d:%02d\t%-16s\t%-6d\t%-16s\t%d\n",
+               $hh, $mm, $ss,
+               @comm_m[arg0],
+               @pid_m[arg0],
+               "nvme-rdma",
+               $lat_us);
+
+        @outliers["nvme-rdma"] = count();
+    }
+
+    delete(@start[arg0]);
+    delete(@comm_m[arg0]);
+    delete(@pid_m[arg0]);
+}
+
+interval:s:10 {
+    printf("\n--- outliers last 10s ---\n");
+    print(@outliers);
+    clear(@outliers);
+}
+
+END {
+    clear(@start);
+    clear(@comm_m);
+    clear(@pid_m);
+    clear(@outliers);
+}
