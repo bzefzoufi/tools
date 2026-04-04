@@ -1,4 +1,4 @@
-config = { map_max_keys = 65535 }
+config = { max_map_keys = 65535 }
 BEGIN {
     printf("%-10s %-16s %-10s %-8s %-8s %-8s\n",
            "TIME", "COMM", "DISK", "TOTAL", "SAN", "KERN");
