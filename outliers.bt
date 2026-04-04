@@ -7,16 +7,17 @@ tracepoint:block:block_rq_insert {
     @q_start[args->dev, args->sector] = nsecs;
 }
 
-kprobe:blk_mq_start_request {
-    @driver_start[arg0] = nsecs;
+tracepoint:block:block_rq_issue {
+    @driver_start[args->dev, args->sector] = nsecs;
 }
 
-kprobe:blk_mq_end_request {
+tracepoint:block:block_rq_complete {
     $now = nsecs;
-    $req = (struct request *)arg0;
+    $dev = args->dev;
+    $sector = args->sector;
     
-    $d_start = @driver_start[arg0];
-    $q_start = @q_start[$req->bd_dev, $req->__sector];
+    $d_start = @driver_start[$dev, $sector];
+    $q_start = @q_start[$dev, $sector];
     
     if ($d_start > 0 && $q_start > 0) {
         $san_lat = ($now - $d_start) / 1000000;
@@ -29,5 +30,6 @@ kprobe:blk_mq_end_request {
                    $total_lat, $san_lat, $kern_lat);
         }
     }
-    delete(@driver_start[arg0]);
+    delete(@driver_start[$dev, $sector]);
+    delete(@q_start[$dev, $sector]);
 }
