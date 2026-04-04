@@ -32,3 +32,8 @@ tracepoint:block:block_rq_complete {
         }
     }
 }
+
+END {
+    clear(@driver_start);
+    clear(@q_start);
+}
