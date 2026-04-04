@@ -7,17 +7,17 @@ BEGIN {
            "TIME", "COMM", "DISK", "TRANSPORT", "TOTAL(ms)", "KERN(ms)", "DEV(ms)");
 }
 
-/* Track I/O from OS queue insertion */
-tracepoint:block:block_rq_insert {
-    @q_start[args->rq] = nsecs;
+/* Hook when request enters mq layer (earliest reliable point) */
+kprobe:blk_mq_sched_insert_request {
+    @q_start[arg0] = nsecs;
 }
 
-/* Track when I/O is handed to driver */
+/* Hook when driver actually starts the request */
 kprobe:blk_mq_start_request {
     @driver_start[arg0] = nsecs;
 }
 
-/* Track completion and calculate latencies */
+/* Hook at completion */
 kprobe:blk_mq_end_request {
     $now = nsecs;
     $req = (struct request *)arg0;
