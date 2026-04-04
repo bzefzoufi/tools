@@ -3,8 +3,8 @@ BEGIN {
            "TIME", "COMM", "DISK", "TOTAL", "SAN", "KERN");
 }
 
-tracepoint:block:block_rq_issue {
-    @q_start[args->dev, args->sector] = nsecs;
+tracepoint:block:block_rq_insert {
+    @q_start[args->rq] = nsecs;
 }
 
 kprobe:blk_mq_start_request {
@@ -14,7 +14,7 @@ kprobe:blk_mq_start_request {
 kprobe:blk_mq_end_request {
     $now = nsecs;
     $d_start = @driver_start[arg0];
-    $q_start = @q_start[MAJOR(arg1), MINOR(arg1)];
+    $q_start = @q_start[arg0];
     
     if ($d_start > 0 && $q_start > 0) {
         $san_lat = ($now - $d_start) / 1000000;
@@ -28,4 +28,5 @@ kprobe:blk_mq_end_request {
         }
     }
     delete(@driver_start[arg0]);
+    delete(@q_start[arg0]);
 }
