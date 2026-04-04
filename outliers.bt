@@ -2,87 +2,51 @@
 
 config = { max_map_keys = 1256000} 
 
+#!/usr/bin/env bpftrace
+
 BEGIN {
-    printf("%-10s\t%-16s\t%-10s\t%-10s\t%-8s\t%-8s\t%-8s\n",
-           "TIME", "COMM", "DISK", "TRANSPORT", "TOTAL(ms)", "KERN(ms)", "DEV(ms)");
+    printf("%-10s\t%-16s\t%-10s\t%-10s\t%-8s\n",
+           "TIME", "COMM", "DEV", "TRANSPORT", "LAT(ms)");
 }
 
-/* Entry point: request queued */
-kprobe:blk_mq_sched_insert_request {
-    $req = (struct request *)arg0;
-    @q_start[arg0] = nsecs;
-    
-    /* Store disk info early - try multiple methods for compatibility */
-    $disk_ptr = 0;
-    if ($req->q != 0) {
-        if ($req->q->disk != 0) {
-            @disk_ptr[arg0] = (u64)$req->q->disk;
-        }
-    }
+/* I/O starts (block layer receives request) */
+tracepoint:block:block_io_start {
+    @start[args->dev, args->sector] = nsecs;
 }
 
-/* Driver handoff */
-kprobe:blk_mq_start_request {
-    @driver_start[arg0] = nsecs;
-}
-
-/* Completion */
-kprobe:blk_mq_end_request {
-    $now = nsecs;
-    $req = (struct request *)arg0;
+/* I/O completes */
+tracepoint:block:block_io_done {
+    $key_time = @start[args->dev, args->sector];
+    if ($key_time == 0) { return; }
     
-    $q_start = @q_start[arg0];
-    $driver_start = @driver_start[arg0];
+    $lat_ms = (nsecs - $key_time) / 1000000;
     
-    if ($q_start > 0 && $driver_start > 0) {
-        $dev_lat = ($now - $driver_start) / 1000000;
-        $total_lat = ($now - $q_start) / 1000000;
-        $kern_lat = $total_lat - $dev_lat;
+    /* Filter: show I/Os > 1ms */
+    if ($lat_ms >= 1 && $lat_ms < 500) {
+        /* Decode device major:minor */
+        $dev_major = args->dev >> 20;
+        $dev_minor = args->dev & 0xFFFFF;
         
-        /* Get disk name from stored pointer */
-        $disk = "unknown";
-        $disk_addr = @disk_ptr[arg0];
-        if ($disk_addr != 0) {
-            $gendisk = (struct gendisk *)$disk_addr;
-            $disk = $gendisk->disk_name;
+        /* Detect transport from device major number */
+        $transport = "Unknown";
+        if ($dev_major == 259) {
+            $transport = "NVMe";
+        } else if ($dev_major == 8 || $dev_major == 65) {
+            $transport = "SCSI/iSCSI";
         }
         
-        /* Filter: show I/Os > 1ms */
-        if ($total_lat >= 1) {
-            /* Detect transport from disk name */
-            $transport = "Unknown";
-            if (strcontains($disk, "nvme")) {
-                if (strcontains($disk, "tcp")) {
-                    $transport = "NVMe-TCP";
-                } else if (strcontains($disk, "rdma")) {
-                    $transport = "NVMe-RDMA";
-                } else if (strcontains($disk, "fc")) {
-                    $transport = "NVMe-FC";
-                } else {
-                    $transport = "NVMe-PCIe";
-                }
-            } else if (strcontains($disk, "sd")) {
-                $transport = "iSCSI/SAS";
-            }
-            
-            printf("%-10s\t%-16s\t%-10s\t%-10s\t%-8d\t%-8d\t%-8d\n",
-                   strftime("%H:%M:%S", $now),
-                   comm,
-                   $disk,
-                   $transport,
-                   $total_lat,
-                   $kern_lat,
-                   $dev_lat);
-        }
+        printf("%-10s\t%-16s\t%-10d:%d\t%-10s\t%-8d\n",
+               strftime("%H:%M:%S", nsecs),
+               comm,
+               $dev_major,
+               $dev_minor,
+               $transport,
+               $lat_ms);
     }
     
-    delete(@q_start[arg0]);
-    delete(@driver_start[arg0]);
-    delete(@disk_ptr[arg0]);
+    delete(@start[args->dev, args->sector]);
 }
 
 END {
-    clear(@q_start);
-    clear(@driver_start);
-    clear(@disk_ptr);
+    clear(@start);
 }
