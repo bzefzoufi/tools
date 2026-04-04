@@ -31,6 +31,4 @@ tracepoint:block:block_rq_complete {
                    $total_lat, $san_lat, $kern_lat);
         }
     }
-    delete(@driver_start[$dev, $sector]);
-    delete(@q_start[$dev, $sector]);
 }
