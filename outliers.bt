@@ -7,21 +7,29 @@ BEGIN {
            "TIME", "COMM", "DISK", "TRANSPORT", "TOTAL(ms)", "KERN(ms)", "DEV(ms)");
 }
 
-/* Hook when request enters mq layer (earliest reliable point) */
+/* Entry point: request queued */
 kprobe:blk_mq_sched_insert_request {
+    $req = (struct request *)arg0;
     @q_start[arg0] = nsecs;
+    
+    /* Store disk info early - try multiple methods for compatibility */
+    $disk_ptr = 0;
+    if ($req->q != 0) {
+        if ($req->q->disk != 0) {
+            @disk_ptr[arg0] = (u64)$req->q->disk;
+        }
+    }
 }
 
-/* Hook when driver actually starts the request */
+/* Driver handoff */
 kprobe:blk_mq_start_request {
     @driver_start[arg0] = nsecs;
 }
 
-/* Hook at completion */
+/* Completion */
 kprobe:blk_mq_end_request {
     $now = nsecs;
     $req = (struct request *)arg0;
-    $disk = $req->rq_disk->disk_name;
     
     $q_start = @q_start[arg0];
     $driver_start = @driver_start[arg0];
@@ -30,6 +38,14 @@ kprobe:blk_mq_end_request {
         $dev_lat = ($now - $driver_start) / 1000000;
         $total_lat = ($now - $q_start) / 1000000;
         $kern_lat = $total_lat - $dev_lat;
+        
+        /* Get disk name from stored pointer */
+        $disk = "unknown";
+        $disk_addr = @disk_ptr[arg0];
+        if ($disk_addr != 0) {
+            $gendisk = (struct gendisk *)$disk_addr;
+            $disk = $gendisk->disk_name;
+        }
         
         /* Filter: show I/Os > 1ms */
         if ($total_lat >= 1) {
@@ -62,9 +78,11 @@ kprobe:blk_mq_end_request {
     
     delete(@q_start[arg0]);
     delete(@driver_start[arg0]);
+    delete(@disk_ptr[arg0]);
 }
 
 END {
     clear(@q_start);
     clear(@driver_start);
+    clear(@disk_ptr);
 }
