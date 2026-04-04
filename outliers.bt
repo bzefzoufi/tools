@@ -4,33 +4,36 @@ BEGIN {
 }
 
 tracepoint:block:block_rq_issue {
-    @q_start[args->rq] = nsecs;
-    @disk_name[args->rq] = args->disk;
+    @q_start[args->dev, args->sector] = nsecs;
 }
 
 kprobe:blk_mq_start_request {
-    @driver_start[arg0] = nsecs;
+    $req = (struct request *)arg0;
+    $dev = $req->rq_disk->part0->bd_dev;
+    $sector = $req->__sector;
+    @driver_start[$dev, $sector] = nsecs;
 }
 
 kprobe:blk_mq_end_request {
     $now = nsecs;
     $req = (struct request *)arg0;
-    $d_start = @driver_start[arg0];
-    $q_start = @q_start[arg0];
+    $dev = $req->rq_disk->part0->bd_dev;
+    $sector = $req->__sector;
+    
+    $d_start = @driver_start[$dev, $sector];
+    $q_start = @q_start[$dev, $sector];
     
     if ($d_start > 0 && $q_start > 0) {
-        $disk = @disk_name[arg0];
         $san_lat = ($now - $d_start) / 1000000;
         $total_lat = ($now - $q_start) / 1000000;
         $kern_lat = $total_lat - $san_lat;
         
         if ($total_lat >= 1) {
             printf("%-10s %-16s %-10s %-8d %-8d %-8d\n",
-                   strftime("%H:%M:%S", $now), comm, $disk,
+                   strftime("%H:%M:%S", $now), comm, "disk",
                    $total_lat, $san_lat, $kern_lat);
         }
     }
-    delete(@driver_start[arg0]);
-    delete(@q_start[arg0]);
-    delete(@disk_name[arg0]);
+    delete(@driver_start[$dev, $sector]);
+    delete(@q_start[$dev, $sector]);
 }
