@@ -2,8 +2,6 @@
 
 config = { max_map_keys = 1256000} 
 
-#!/usr/bin/env bpftrace
-
 BEGIN {
     printf("%-10s\t%-16s\t%-10s\t%-10s\t%-8s\n",
            "TIME", "COMM", "DEV", "TRANSPORT", "LAT(ms)");
@@ -14,20 +12,17 @@ tracepoint:block:block_io_start {
     @start[args->dev, args->sector] = nsecs;
 }
 
-/* I/O completes */
 tracepoint:block:block_io_done {
     $key_time = @start[args->dev, args->sector];
     if ($key_time == 0) { return; }
     
     $lat_ms = (nsecs - $key_time) / 1000000;
     
-    /* Filter: show I/Os > 1ms */
     if ($lat_ms >= 1 && $lat_ms < 500) {
         /* Decode device major:minor */
         $dev_major = args->dev >> 20;
         $dev_minor = args->dev & 0xFFFFF;
         
-        /* Detect transport from device major number */
         $transport = "Unknown";
         if ($dev_major == 259) {
             $transport = "NVMe";
