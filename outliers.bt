@@ -7,7 +7,6 @@ BEGIN {
            "TIME", "COMM", "DEV", "TRANSPORT", "LAT(ms)");
 }
 
-/* I/O starts (block layer receives request) */
 tracepoint:block:block_io_start {
     @start[args->dev, args->sector] = nsecs;
 }
